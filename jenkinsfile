@@ -1,1 +1,14 @@
+pipeline{
+
+ageny any
+stage('c-project') 
+{
+  steps
+{
+    echo " new firl added"
+  }
+}
+
+
+}
 
