@@ -1,6 +1,8 @@
 pipeline{
 
 ageny any
+stages
+{
 stage('c-project') 
 {
   steps
@@ -16,7 +18,7 @@ stage('new1')
     echo " new1 added"
   }
 }
-
+}
 
 
 }
