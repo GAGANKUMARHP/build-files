@@ -5,9 +5,18 @@ stage('c-project')
 {
   steps
 {
-    echo " new firl added"
+    echo " new file added"
   }
 }
+
+stage('new1') 
+{
+  steps
+{
+    echo " new1 added"
+  }
+}
+
 
 
 }
