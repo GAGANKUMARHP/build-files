@@ -1,0 +1,25 @@
+Description: creating the new vpc set up
+ 
+Parameters:
+   EnvName:
+     Description: enter the name of the vpc
+     Type: String
+     
+   CIDR:
+     Description: enter the ip address
+     Type: String
+     
+Resources:
+  VPC:
+   Type: AWS::EC2::VPC
+   Properties:
+     CidrBlock: !Ref CIDR
+     Tags:
+      Key: NAME
+      Value: !Ref EnvName
+      
+Outputs:
+   VPC:
+    Description: Outputs
+    Value: !Ref VPC
+   
